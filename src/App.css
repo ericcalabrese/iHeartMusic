@@ -1,15 +1,28 @@
 body {
-  background: #000;
-  color: #fff;
+  color: black;
+  height: 100%;
 }
 
 .App {
   text-align: center;
-  padding: 5%;
+  padding: 4%;
 }
 
 .App-title {
   font-size: 26px;
+}
+
+a span{
+  color: black;
+  font-size: 25px;
+}
+
+a .red{
+  color: red;
+}
+
+.input-group-addon {
+  color: black;
 }
 
 /*Profile*/

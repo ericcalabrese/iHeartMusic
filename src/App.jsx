@@ -1,8 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import { FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap';
+import { FormGroup, FormControl, InputGroup, Glyphicon, Navbar, Nav, NavItem } from 'react-bootstrap';
 import Profile from './Profile';
 import Gallery from './Gallery';
+import Woodstock from './milk.jpg';
+import NavBar from './NavBar';
+import Footer from './Footer';
+
+const styles = {
+  app: {
+    backgroundImage: 'url(' + Woodstock + ')',
+    width: '100%',
+    height: '800px',
+    backgroundSize: 'cover'
+  }
+};
+
 
 class App extends Component {
   constructor(props) {
@@ -43,8 +56,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="App-title">Music Master</div>
+      <div className="App" style={styles.app}>
+        <NavBar />
         <FormGroup>
           <InputGroup>
             <FormControl
@@ -76,7 +89,8 @@ class App extends Component {
             </div>
           : <div></div>
         }
-
+        <Footer />
+      
       </div>
     )
   }
